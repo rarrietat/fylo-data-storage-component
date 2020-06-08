@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background-color: #0C122C;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
 .bg{
@@ -18,13 +26,88 @@ body{
 .card-container{
     position: relative;
     z-index: 10;
+    width: 57.5rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     .card1{
-        width: 475px;
-        height: 273px;
+        width: 19.4rem;
+        height: 100%;
         background: #1E2C69;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        border-top-right-radius: 10rem;
+        border-top-left-radius: .6rem;
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+        border-top-right-radius: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2.5rem;
+        .logo{
+            width: 8.5rem;
+            margin-bottom: 1.8rem;
+        }
+        .actions{
+            display: flex;
+            .bg-icon{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 8px;
+                background: #0C122C;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .card2{
+        width: 33.75rem;
+        height: 9.65rem;
+        background: #1E2C69;
+        border-radius: .6rem;
+        box-sizing: border-box;
+        padding: 2.5rem;
+        p{
+            margin-top: 0;
+        }
+        .progress-bar{
+            width: 100%;
+            height: 20px;
+            background: #151E49;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            .progress{
+                width: 73%;
+                height: 68%;
+                margin: 0;
+                margin-left: 1%;
+                border-radius: 15px;
+                background: rgb(188,233,254);
+                background: linear-gradient(90deg, rgba(188,233,254,1) 0%, rgba(254,159,148,1) 0%, rgba(250,76,145,1) 100%);
+                display: flex;
+                align-items: center;
+                &::before{
+                    content: "";
+                    display: block;
+                    border-radius: 50%;
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 95.7%;
+                    background-color: #ffffff;
+                }
+            }
+            
+            
+        }
+        .gb{
+            margin-top: .5rem;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 12px;
+        }
     }
 }
