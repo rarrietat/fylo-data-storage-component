@@ -17,6 +17,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: var(--pale-blue);
     font-family: 'Raleway', sans-serif;
@@ -159,6 +160,18 @@ body{
             font-size: 12px;
         }
     }
+
+}
+
+.foot {
+    z-index: 6;
+    position: absolute;
+    bottom: 5px;
+    font-size: 11px; text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+    }
 }
 
 @media screen and (max-width: 960px){
@@ -174,6 +187,7 @@ body{
         }
     }
 }
+
 
 @media screen and (max-width: 580px){
     :root{
